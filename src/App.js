@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ParentContainer from "./components/ParentContainer";
 import Display from "./components/Display";
 import Buttons from "./components/Buttons";
-
+import './App.css'
 
 function App() {
   const [data, setData] = useState('');
@@ -22,11 +22,12 @@ function App() {
   }
 
   return (
-      <ParentContainer>
+      <ParentContainer >
           {/* whatever we write here, will become a children prop for container/component  */}
           <Display data={data}/>
           <Buttons btnClick={handleClick}/>
       </ParentContainer>
+  
   );
 } 
 
